@@ -1,0 +1,170 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Dht from "../components/Dht.astro";
+---
+
+<Layout title="资源教程">
+  <main>
+    <Dht />
+    <h1><span style="color: black;">欢迎来到</span><span style="color: #007acc;">秀设计</span></h1>
+    <h2>学习设计，从这里开始</h2>
+    <p>无论你是设计新手还是专业人士，秀设计都为你准备了丰富的资源教程，帮助你提升设计技能。点击下方图片，立即开始你的学习之旅！</p>
+    <button class="start-design-button" onclick="redirectToLoginOrRegister()">立即注册，开始设计</button>
+    
+    <div class="content-section">
+      <div class="content-left">
+        <img src="https://static-cse.canva.cn/blob/360108/videoTile012x.0e6e0dda.avif" alt="视觉世界准备的全套工具箱" style="max-width: 100%;">
+      </div>
+      <div class="content-right">
+        <h3>为视觉世界准备的全套工具箱</h3>
+        <p>秀设计的视觉办公套件是你工作流程里的一站式助手。不论是企业，公益组织，教育工作者，内容创作者，又或者是任何想通过视觉传达产生影响的人，我们提供从开始到结束的完美解决方案。</p>
+      </div>
+    </div>
+
+    <div class="content-section">
+      <div class="content-left">
+        <h3>为工作赋予设计的力量</h3>
+        <p>不论是演示文稿，营销物料；又或者和团队成员一起头脑风暴...试试用视觉内容让自己脱颖而出。拖拽即可使用的编辑器，海量模板和素材贯穿视觉办公套件的每个工具，内容创作可以快速又简单。</p>
+      </div>
+      <div class="content-right">
+        <img src="https://static-cse.canva.cn/blob/360109/videoTile022x.109a2cb4.avif" alt="为工作赋予设计的力量" style="max-width: 100%;">
+      </div>
+    </div>
+
+    <h2>从灵感迸发到实现设计，让这些工具来帮忙</h2>
+
+    <div class="feature-grid">
+      <div class="feature-box">
+        <img src="https://static-cse.canva.cn/blob/360187/Features_AssetManager.png" alt="管理品牌资产" style="width: 100%;">
+        <div class="feature-text">管理品牌资产<br>把设计资产整理得一起，井井有条，方便团队成员访问并使用。</div>
+      </div>
+      <div class="feature-box">
+        <img src="https://static-cse.canva.cn/blob/360183/Features_Insights.png" alt="用数据说话" style="width: 100%;">
+        <div class="feature-text">用数据说话<br>利用客观的洞察结果调整设计，增大你的影响力。</div>
+      </div>
+    </div>
+    <div class="feature-grid">
+      <div class="feature-box">
+        <img src="https://static-cse.canva.cn/blob/360186/Features_LibraryAssets.png" alt="7000万免费图片和素材" style="width: 100%;">
+        <div class="feature-text">7000万免费图片和素材<br>照片、图形、视频、音频...能在设计中使用到的素材都应有尽有。</div>
+      </div>
+      <div class="feature-box">
+        <img src="https://static-cse.canva.cn/blob/360185/Features_Templates.png" alt="用模版开个好头" style="width: 100%;">
+        <div class="feature-text">用模板开个好头<br>从空白画布开始，或者从我们现有的10万个可随意修改的模板中选择。</div>
+      </div>
+    </div>
+    <div class="feature-grid">
+      <div class="feature-box">
+        <img src="https://static-cse.canva.cn/blob/360189/Features_Editor.png" alt="拖拽式编辑器" style="width: 100%;">
+        <div class="feature-text">拖拽式编辑器<br>不需要你有任何设计基础，我们的编辑器简单直观易使用。</div>
+      </div>
+      <div class="feature-box">
+        <img src="https://static-cse.canva.cn/blob/360188/Features_Collab.png" alt="团队协作可以更简单" style="width: 100%;">
+        <div class="feature-text">团队协作可以更简单<br>邀请你的团队成员实时协同编辑，适用于任何人数规模的团队。</div>
+      </div>
+    </div>
+    <div class="feature-grid">
+      <div class="feature-box">
+        <img src="https://static-cse.canva.cn/blob/360182/Features_Imports.png" alt="能导出，也能导入" style="width: 100%;">
+        <div class="feature-text">能导出，也能导入<br>将你现有的PDF，PPTX等文件导入秀设计，就能得到一份可编辑的设计。</div>
+      </div>
+      <div class="feature-box">
+        <img src="https://static-cse.canva.cn/blob/360184/Features_Apps_.png" alt="衔接你最顺手的办公工具" style="width: 100%;">
+        <div class="feature-text">衔接你最顺手的办公工具<br>把日常使用的工具集成到秀设计，无缝衔接工作流程。</div>
+      </div>
+    </div>
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: auto;
+    padding: 1rem;
+    width: 800px;
+    max-width: calc(100% - 2rem);
+    color: #000; 
+    font-size: 20px;
+    line-height: 1.6;
+    background-color: #f0f8ff;
+  }
+  p {
+    padding: 1rem 0;
+    max-width: 100%;
+    color: rgb(18, 18, 19);
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  h1 {
+    font-size: 4rem;
+    color: #007acc;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  h2 {
+    text-align: center;
+    margin-top: 2em;
+  }
+  h3 {
+    font-size: 1.5rem;
+    text-align: left;
+  }
+  .start-design-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .content-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  .content-left, .content-right {
+    flex: 1;
+    margin: 0 10px;
+  }
+  .content-left img, .content-right img {
+    width: 100%;
+    height: auto;
+  }
+  .feature-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  .feature-box {
+    flex: 1 1 calc(50% - 20px);
+    margin: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  .feature-box img {
+    width: 100%;
+    height: auto;
+  }
+  .feature-text {
+    padding: 10px;
+    font-size: 14px;
+    color: #000;
+    text-align: center;
+  }
+</style>
+
+<script>
+  function redirectToLoginOrRegister() {
+    // 假设登录或注册页面URL为 /login-register
+    window.location.href = "/login-register";
+  }
+</script>
